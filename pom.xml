@@ -66,9 +66,12 @@
   <properties>
 
     <!-- Dependency versions in alphabetic order -->
-    <version.org.hawkular.accounts>2.0.12.Final</version.org.hawkular.accounts>
+    <version.org.hawkular.accounts>2.0.14.Final</version.org.hawkular.accounts>
     <version.org.hawkular.commons>0.3.4.Final</version.org.hawkular.commons>
     <version.org.hawkular.inventory>0.12.1.Final</version.org.hawkular.inventory>
+
+    <!-- Managed in parent. Remove once parent has this version higher than 1.0.7.Final -->
+    <version.org.keycloak.secretstore>1.0.9.Final</version.org.keycloak.secretstore>
 
     <!-- Plugin versions in alphabetic order -->
     <plugin.version.org.jsonschema2pojo>0.4.14</plugin.version.org.jsonschema2pojo>
@@ -100,6 +103,13 @@
         <groupId>org.hawkular.inventory</groupId>
         <artifactId>hawkular-inventory-json-helper</artifactId>
         <version>${version.org.hawkular.inventory}</version>
+      </dependency>
+
+      <!-- Managed in parent. Remove once parent has this version higher than 1.0.7.Final -->
+      <dependency>
+        <groupId>org.keycloak.secretstore</groupId>
+        <artifactId>secret-store-undertow-filter</artifactId>
+        <version>${version.org.keycloak.secretstore}</version>
       </dependency>
 
       <dependency>
